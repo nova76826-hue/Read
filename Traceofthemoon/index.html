@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Manga Reader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="reader">
+      <h2 id="chapter-title">
+        Chapter 1
+      </h2>
+
+      <div class="chapter-controls">
+        <button onclick="prevChapter()">
+          ⬅ Previous Chapter
+        </button>
+        <button onclick="nextChapter()">
+          Next Chapter ➡
+        </button>
+      </div>
+
+      <div id="manga-container"></div>
+
+      <div class="chapter-controls">
+        <button onclick="prevChapter()">
+          ⬅ Previous Chapter
+        </button>
+        <button onclick="nextChapter()">
+          Next Chapter ➡
+        </button>
+      </div>
+    </div>
+
+    <script src="chapters.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
