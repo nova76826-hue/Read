@@ -670,7 +670,7 @@
     };
     const STORAGE_KEY = "mangaIndex_tracesOfMoon";
     let chapterKeys = Object.keys(mangaConfig);
-    let currentChapterIndex = parseInt(localStorage.getItem("STORAGE_KEY")) || 0;
+    let currentChapterIndex = parseInt(localStorage.getItem(STORAGE_KEY)) || 0;
 
     function loadChapter() {
       let chapterName = chapterKeys[currentChapterIndex];
@@ -701,7 +701,7 @@
         container.appendChild(img);
       }
 
-      localStorage.setItem("STORAGE_KEY", currentChapterIndex);
+      localStorage.setItem(STORAGE_KEY, currentChapterIndex);
       window.scrollTo(0, 0);
     }
 
